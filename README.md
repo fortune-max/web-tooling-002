@@ -25,7 +25,7 @@ prettier --write app/components/Button.js
 prettier --write "app/**/*.test.js"
 ```
 
-#### ESLint Setup
+## ESLint Setup
 
 -  Install and configure ESLint for your project through the terminal prompt depending on your project type by running:
 
@@ -48,7 +48,7 @@ prettier --write "app/**/*.test.js"
 ```
 
 
-## ESLint-plugin-prettier
+#### ESLint-plugin-prettier
 
 This runs `Prettier` as an ESLint rule and works with `eslint-config-prettier` to prevent conflicts
 
