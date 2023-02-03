@@ -67,7 +67,7 @@ Then add to `.eslintrc.json`:
 
 (You can ignore the above config if you used the `extend` config with `"plugin:prettier/recommended"` in `eslint-config-prettier` from earlier).
 
-## Husky Install (And lint-staged to run your linter on only staged files [optional])
+## Husky Install (Add lint-staged to run your linter on only staged files [optional])
 
 - Install `husky` and `lint-staged` dev dependency
 
