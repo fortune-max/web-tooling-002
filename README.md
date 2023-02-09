@@ -67,6 +67,24 @@ Then add to `.eslintrc.json`:
 
 (You can ignore the above config if you used the `extend` config with `"plugin:prettier/recommended"` in `eslint-config-prettier` from earlier).
 
+Extension `plugin:prettier/recomended` expands to:
+
+```
+{
+  "extends": ["prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "arrow-body-style": "off",
+    "prefer-arrow-callback": "off"
+  }
+}
+```
+
+#### Additional ESLint config for React testing
+
+If you used `create-react-app` or similar, there should be an `eslintConfig.extends` in your `package.json`. Move these two extensions (usually `"react-app"` and `"react-app/jest"`) to your `extends` in `.eslintrc.json` (must not be after last `extends` entry - `plugin:prettier/recommended`).
+
 ## Husky Install (Add lint-staged to run your linter on only staged files [optional])
 
 - Install `husky` and `lint-staged` dev dependency
