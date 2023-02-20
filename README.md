@@ -112,3 +112,8 @@ To add the linting npm command we added earlier (`npm run lint`) to be run befor
   }
 ```
 
+## Storybook Install
+
+- Install Storybook on your project using `npx storybook init` which adds a `Button` example and the storybook directory structure.
+
+- It may also be necessary to npm install `@mdx-js/react` as this was necessary to be explicitly installed for storybook to work in a different environment from mine (it was part of local node modules but not in package.json, probably due to storybook using yarn to install)
